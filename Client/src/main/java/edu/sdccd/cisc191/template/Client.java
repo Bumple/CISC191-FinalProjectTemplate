@@ -16,6 +16,8 @@ import java.io.*;
  * date and time on the computer where the server is running.
  */
 
+/* look here */
+
 public class Client {
     private Socket clientSocket;
     private PrintWriter out;
