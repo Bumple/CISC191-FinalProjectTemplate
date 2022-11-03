@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="599.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.sdccd.cisc191.template.FightScreen">
+   <center>
+      <Pane prefHeight="283.0" prefWidth="594.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label fx:id="myNameLabel" layoutX="5.0" layoutY="21.0" prefHeight="20.0" prefWidth="130.0" text="Your Monster" visible="false"/>
+            <Button fx:id="strongHitButt" layoutX="5.0" layoutY="70.0" mnemonicParsing="false" onAction="#heavyPressed" text="Heavy attack" visible="false"/>
+            <Button fx:id="lightHitButt" layoutX="5.0" layoutY="115.0" mnemonicParsing="false" onAction="#lightPressed" text="Light attack" visible="false"/>
+            <Button fx:id="scratchButt" layoutX="5.0" layoutY="160.0" mnemonicParsing="false" onAction="#scratchedPressed" text="Scratch" visible="false"/>
+            <Button fx:id="runButt" layoutX="5.0" layoutY="220.0" mnemonicParsing="false" onAction="#runAway" prefHeight="27.0" prefWidth="190.0" text="Run Away" visible="false"/>
+            <Button fx:id="beginButton" layoutX="262.0" layoutY="160.0" mnemonicParsing="false" onAction="#begin" text="Start Fight" />
+            <Label fx:id="enemyName" layoutX="430.0" layoutY="21.0" prefHeight="20.0" prefWidth="130.0" text="Enemy Monster" visible="false"/>
+            <Label fx:id="enemyHP" layoutX="430.0" layoutY="45.0" prefHeight="20.0" prefWidth="150.0" text="Label" visible="false" />
+            <Label fx:id="myHP" layoutX="5.0" layoutY="45.0" prefHeight="20.0" prefWidth="50.0" text="Label" visible="false"/>
+            <Label fx:id="enemyStatsLabel" layoutX="385.0" layoutY="202.0" prefHeight="60.0" prefWidth="220.0" text="Label" visible="false"/>
+            <Label fx:id="myTurnResults" layoutX="200.0" layoutY="270.0" prefHeight="33.0" prefWidth="257.0" text="" visible="false" />
+            <Label fx:id="enemyTurnResults" layoutX="200.0" layoutY="310.0" prefHeight="33.0" prefWidth="257.0" text="" visible="false" />
+            <Label fx:id="myAP" layoutX="60.0" layoutY="45.0" prefHeight="20.0" prefWidth="50.0" text="Label" visible="false" />
+         </children>
+      </Pane>
+   </center>
+</BorderPane>
